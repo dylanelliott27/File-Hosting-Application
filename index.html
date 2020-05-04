@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>File upload</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-light greencolor">
+            <span class="navbar-brand mb-0 h1">Uploadian</span>
+        </nav>
+    </header>
+    <div class="container text-center mt-5">
+        <h1 class="display-2">Upload files for <span style="color: #00A896;">FREE!</span></h1>
+    </div>
+    <hr class="linebreak">
+    <div class="container d-flex justify-content-center align-items-center">
+        <div  style="position: absolute" class="container d-flex justify-content-between">
+            <div class="testbubble">1</div>
+            <div id="secondbubble" style="background-color: #bdbdbd;" class="testbubble">2</div>
+            <div id="thirdbubble" style="background-color: #bdbdbd;" class="testbubble">3</div>
+        </div>
+        <div style="width: 91%" class="progress">
+            <div id="progressbar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 5%"></div>
+        </div>
+        <form id="form" class="container d-flex justify-content-between mt-5 pt-5" style="position: absolute" enctype="multipart/form-data" id="fileupload">
+            <select id="dropdown" onchange="handleFirstStep(event);" >
+                <option selected hidden>Choose here</option>
+                <option value="fileOption">File</option>
+                <option value="textOption">Text</option>
+            </select>
+            <label id="fileuploaderbutton" for="fileuploader"><button id="uploadfilebutton" disabled class="btn btn-success mr-4" type="button">Upload File</button></label>
+            <input onchange="handleSecondStep(event);" class="hide" type="file" value="file" name="file" id="fileuploader"></input>
+            <button class="btn btn-success" disabled id="submitbutton" type="submit">Submit!</button>
+        </form>
+    </div>
+    <div class="listcontainer">
+        <input value="HTTP://" class="linkdisplay">
+    </div>
+    <script src="./main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

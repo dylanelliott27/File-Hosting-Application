@@ -1,0 +1,56 @@
+.greencolor{
+    background-color: #00A896 !important;
+}
+.linebreak{
+    height: 1px;
+    background-color: #DADADA;
+    width: 75%;
+    margin-bottom: 10rem;
+}
+.card1{
+    position: relative;
+}
+.bubble{
+    position: absolute;
+    top: -65px;
+    background-color: #00A896;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.testbubble{
+    background-color: #00A896;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.rmrightpad{
+    padding-right: 0 !important;
+}
+.hide{
+    display: none;
+}
+.listcontainer{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linkdisplay{
+    width: 50%;
+    height: 10%;
+    color: grey;
+    background-color: #bdbdbd;
+    font-size: 2rem;
+}
+#dropdown{
+    border-radius: .25rem;
+    background-color: #28a745;
+    color: white;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
